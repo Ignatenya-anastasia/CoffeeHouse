@@ -1,0 +1,210 @@
+.preview {
+    margin-top: 20px;
+    width: 100%;
+    background-image: url(./picture/background.svg);
+    border-radius: 40px;
+}
+
+.preview div {
+    width: 530px;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.preview div h1 {
+    font: 600 72px Inter;
+    color: #E1D4C9;
+}
+
+.preview div span {
+    color: #B0907A;
+    font-style: italic;
+}
+
+.preview div p {
+    font: 400 16px Inter;
+    color: #E1D4C9;
+}
+
+.preview div button {
+    width: 200px;
+    height: 64px;
+    background-color: #E1D4C9;
+    border-radius: 100px;
+    font: 600 16px Inter;
+    color: #403F3D;
+}
+
+.preview button .preview-btn-img {
+    display: none;
+}
+
+.preview button:hover .preview-btn-img {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+
+.favor-coffee {
+    margin-top: 100px;
+}
+
+.favor-coffee h2 {
+    text-align: center;
+    font: 600 60px Inter;
+    color: #403F3D;
+}
+
+.favor-coffee span {
+    color: #B0907A;
+    font-style: italic;
+}
+
+.favor-coffee .slider {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.favor-coffee .fav-cof-content {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+}
+
+.favor-coffee .fav-cof-content h3 {
+    font: 600 24px Inter;
+    color: #403F3D;
+}
+
+.favor-coffee .fav-cof-content p {
+    width: 450px;
+    font: 400 16px Inter;
+    color: #403F3D;
+    text-align: center;
+}
+
+.favor-coffee .fav-cof-content .price {
+    font: 600 24px Inter;
+    color: #403F3D;
+    text-align: center;
+}
+
+.about-img {
+    display: flex;
+    gap: 40px;
+}
+
+.about {
+    margin-top: 100px;
+}
+
+.about p {
+    font: 600 60px Inter;
+    color: #403F3D;
+}
+
+.about span {
+    color: #B0907A;
+    font-style: italic;
+}
+
+.about-img {
+    margin-top: 40px;
+}
+
+.about-img div {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.about-img div img {
+    border-radius: 20px;
+}
+
+.mobile-app {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mobile-app .offers {
+    width: 590px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.mobile-app .offers h3 {
+    font: 600 60px Inter;
+    color: #403F3D;
+}
+
+.mobile-app .offers span {
+    color: #B0907A;
+    font-style: italic;
+}
+
+.mobile-app .offers p {
+    font: 400 16px Inter;
+    color: #403F3D;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.buttons .btn-block {
+    width: 200px;
+    height: 64px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    border: 1px solid #665F55;
+    border-radius: 100px;
+}
+
+.buttons .btn-block .hover {
+    display: none;
+}
+
+.buttons .btn-block:hover {
+    background-color: #665F55;
+
+    p {
+        color: #E1D4C9;
+    }
+
+    .default {
+        display: none;
+    }
+
+    .hover {
+        display: inline-block;
+    }
+
+}
+
+.buttons .btn-block img {
+    width: 36px;
+    height: 36px;
+    padding-left: 20px;
+}
+
+.buttons .btn-block .first {
+    font: 600 10px Inter;
+    color: #403F3D;
+}
+
+.buttons .btn-block .second {
+    font: 600 16px Inter;
+    color: #403F3D;
+}

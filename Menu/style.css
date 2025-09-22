@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    font-family: Inter;
+}
+
+body {
+    width: 1440px;
+    background-color: #E1D4C9;
+    margin: auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    width: 100px;
+    height: 60px;
+}
+
+header nav {
+    display: flex;
+    gap: 40px;
+}
+
+header nav p:hover {
+    text-decoration: underline;
+}
+
+header nav p {
+    font: 600 16px Inter;
+    color: #403F3D;
+}
+
+header button {
+    width: 72px;
+    height: 28px;
+    font: 600 16px Inter;
+    color: #403F3D;
+}
+
+header button:hover {
+    border-bottom: 2px solid #403F3D;
+}
+
+header .btn-img {
+    width: 20px;
+    height: 20px;
+}
+
+.offers {
+    margin-top: 20px;
+}
+
+.offers h1 {
+    width: 800px;
+    margin: auto;
+    text-align: center;
+    font: 600 60px Inter;
+    color: #403F3D;
+
+}
+
+.offers span {
+    color: #B0907A;
+    font-style: italic;
+}
+
+.offers .tabs {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.offers .tabs button {
+    padding: 11px 16px 11px 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid #C1B6AD;
+    border-radius: 100px;
+    font: 600 16px Inter;
+    color: #403F3D;
+}
+
+.offers .tabs img {
+    width: 30px;
+    height: 30px;
+}
+
+.offers .tabs button:hover {
+    background-color: #665F55;
+    color: #E1D4C9;
+}
+
+.offers .tabs button:active {
+    background-color: #665F55;
+    color: #E1D4C9;
+}
+
+.grid {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.grid .level {
+    display: flex;
+    gap: 40px;
+}
+
+.grid .level .preview {
+    width: 310px;
+    height: 506px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #C1B6AD;
+    border-radius: 40px;
+}
+
+.grid .preview img {
+    width: 310px;
+    height: 310px;
+}
+
+.grid .content div {
+    margin: 20px;
+}
+
+
+.grid .content h2 {
+    font: 600 24px Inter;
+    color: #403F3D;
+}
+
+.grid .content p {
+    margin-top: 12px;
+    font: 400 16px Inter;
+    color: #403F3D;
+}
+
+.grid .price {
+    padding: 20px;
+    font: 600 24px Inter;
+    color: #403F3D;
+}
+
+footer {
+    margin-top: 100px;
+    padding: 100px;
+    background-color: #665F55;
+    border-radius: 100px;
+    display: flex;
+    gap: 100px;
+    align-items: center;
+}
+
+footer .left {
+    width: 530px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+footer .left h2 {
+    font: 600 60px Inter;
+    color: #E1D4C9;
+}
+
+footer .left span {
+    color: #B0907A;
+    font-style: italic;
+}
+
+footer .left .socials {
+    display: flex;
+    gap: 12px;
+}
+
+footer .left .socials div:hover {
+    background-color: #f1edea;
+}
+
+footer .left .socials div {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #C1B6AD;
+    border-radius: 100px;
+}
+
+footer .left .socials div img {
+    width: 24px;
+    height: 24px;
+
+}
+
+footer .right p {
+    font: 600 24px Inter;
+    color: #E1D4C9;
+}
+
+footer .right-content {
+    margin-top: 40px;
+}
+
+footer .right-content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+footer .right-content p:hover {
+    padding-bottom: 4px;
+    border-bottom: 2px solid #E1D4C9;
+}
+
+footer .right-content p {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    font: 600 16px Inter;
+    color: #E1D4C9;
+}
+
+footer .right-content img {
+    width: 20px;
+    height: 20px;
+}
