@@ -4,18 +4,29 @@
     border: none;
     background-color: transparent;
     font-family: Inter;
+    box-sizing: border-box;
 }
 
 body {
-    width: 1440px;
+    max-width: 1360px;
     background-color: #E1D4C9;
-    margin: auto;
+    margin: 0 auto;
 }
 
-header {
+.container {
+    max-width: 1360px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #E1D4C9;
 }
 
 header img {
@@ -53,12 +64,16 @@ header .btn-img {
     height: 20px;
 }
 
+header .menu-burger {
+    display: none;
+}
+
 .offers {
-    margin-top: 20px;
+    margin-top: 80px;
 }
 
 .offers h1 {
-    width: 800px;
+    max-width: 800px;
     margin: auto;
     text-align: center;
     font: 600 60px Inter;
@@ -109,10 +124,15 @@ header .btn-img {
     display: flex;
     flex-direction: column;
     gap: 40px;
+
+
 }
 
 .grid .level {
+    max-width: 1360px;
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 40px;
 }
 
@@ -153,18 +173,23 @@ header .btn-img {
     color: #403F3D;
 }
 
+.grid .grid-mobile-slider {
+    display: none;
+
+}
+
 footer {
     margin-top: 100px;
     padding: 100px;
     background-color: #665F55;
-    border-radius: 100px;
+    border-radius: 40px;
     display: flex;
     gap: 100px;
     align-items: center;
 }
 
 footer .left {
-    width: 530px;
+    max-width: 530px;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -236,4 +261,64 @@ footer .right-content p {
 footer .right-content img {
     width: 20px;
     height: 20px;
+}
+
+/* Media Queries-Tablet 768px */
+@media (max-width:768px) {
+    header .container nav {
+        display: none;
+    }
+
+    header .container button {
+        display: none;
+    }
+
+    header .menu-burger {
+        display: inline;
+        width: 44px;
+        height: 44px;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: start;
+        padding: 100px 60px;
+    }
+}
+
+@media (max-width:600px) {
+    .offers h1 {
+        font-size: 32px;
+    }
+
+    footer h2 {
+        font-size: 32px;
+    }
+
+    footer {
+        padding: 60px 16px;
+
+    }
+}
+
+/* Media Queries-Mobile 400px */
+@media(max-width:400px) {
+    .grid .mobile-version {
+        display: none;
+    }
+
+    .grid .grid-mobile-slider {
+        display: inline;
+        width: 60px;
+        height: 60px;
+        margin-left: 160px;
+    }
+
+    footer .left h2 {
+        font-size: 32px;
+    }
+
+    footer {
+        padding: 60px 16px;
+    }
 }

@@ -1,12 +1,14 @@
 .preview {
-    margin-top: 20px;
+    margin-top: 80px;
     width: 100%;
     background-image: url(./picture/background.svg);
+    background-position: center;
+    background-size: cover;
     border-radius: 40px;
 }
 
 .preview div {
-    width: 530px;
+    max-width: 530px;
     padding: 100px;
     display: flex;
     flex-direction: column;
@@ -29,6 +31,10 @@
 }
 
 .preview div button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
     width: 200px;
     height: 64px;
     background-color: #E1D4C9;
@@ -83,7 +89,7 @@
 }
 
 .favor-coffee .fav-cof-content p {
-    width: 450px;
+    max-width: 450px;
     font: 400 16px Inter;
     color: #403F3D;
     text-align: center;
@@ -129,6 +135,7 @@
 }
 
 .mobile-app {
+
     margin-top: 100px;
     display: flex;
     justify-content: space-between;
@@ -136,7 +143,7 @@
 }
 
 .mobile-app .offers {
-    width: 590px;
+    max-width: 590px;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -207,4 +214,76 @@
 .buttons .btn-block .second {
     font: 600 16px Inter;
     color: #403F3D;
+}
+
+/* Media Queries-Tablet 1000px */
+@media(max-width: 1000px) {
+    .about .about-img .edditional-ph {
+        display: none;
+    }
+
+    .about .about-img {
+        margin: auto;
+        width: max-content;
+    }
+
+    .mobile-app {
+        flex-direction: column;
+    }
+}
+
+/* Media Queries-Tablet 768px */
+@media(max-width: 768px) {
+    .preview button .preview-btn-img {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+    }
+
+    .favor-coffee .slider .arrow {
+        display: none;
+    }
+
+    .favor-coffee .slider {
+        justify-content: center;
+    }
+}
+
+/* Media Queries-Mobile 400px */
+@media(max-width:400px) {
+    .preview div {
+        padding: 60px 16px;
+    }
+
+    .preview div h1 {
+        font-size: 42px;
+    }
+
+    .favor-coffee h2 {
+        font-size: 32px;
+    }
+
+    .favor-coffee .fav-cof-content p {
+        font-size: 16px;
+    }
+
+    .about p {
+        font-size: 32px;
+    }
+
+    .about .about-img div img {
+        max-width: 350px;
+    }
+
+    .mobile-app .offers h3 {
+        font-size: 32px;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+
+    .mobile-app .mobile-screen {
+        max-width: 350px;
+    }
 }

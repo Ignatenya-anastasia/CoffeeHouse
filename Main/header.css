@@ -7,12 +7,22 @@
 }
 
 body {
-    width: 1360px;
+    max-width: 1360px;
     background-color: #E1D4C9;
     margin: auto;
 }
 
 header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.container {
+    max-width: 1360px;
+    margin: auto;
+    background-color: #E1D4C9;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -54,4 +64,25 @@ header button:hover {
 header .btn-img {
     width: 20px;
     height: 20px;
+}
+
+/* Media Queries-Tablet 768px */
+header .menu-burger {
+    display: none;
+}
+
+@media(max-width:768px) {
+    header .container nav {
+        display: none;
+    }
+
+    header .container button {
+        display: none;
+    }
+
+    header .menu-burger {
+        display: inline;
+        width: 44px;
+        height: 44px;
+    }
 }

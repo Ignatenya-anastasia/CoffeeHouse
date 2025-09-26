@@ -2,14 +2,14 @@ footer {
     margin-top: 100px;
     padding: 100px;
     background-color: #665F55;
-    border-radius: 100px;
+    border-radius: 40px;
     display: flex;
     gap: 100px;
     align-items: center;
 }
 
 footer .left {
-    width: 530px;
+    max-width: 530px;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -39,7 +39,8 @@ footer .left .socials div {
     border: 1px solid #C1B6AD;
     border-radius: 100px;
 }
-footer .left .socials div:hover{
+
+footer .left .socials div:hover {
     background-color: #f1edea;
 }
 
@@ -63,7 +64,8 @@ footer .right-content {
     flex-direction: column;
     gap: 16px;
 }
-footer .right-content p:hover{
+
+footer .right-content p:hover {
     padding-bottom: 4px;
     border-bottom: 2px solid #E1D4C9;
 }
@@ -79,4 +81,24 @@ footer .right-content p {
 footer .right-content img {
     width: 20px;
     height: 20px;
+}
+
+/* Media Queries-Tablet 768px */
+@media(max-width:768px) {
+    footer {
+        flex-direction: column;
+        align-items: start;
+        padding: 100px 60px;
+    }
+}
+
+/* Media Queries-Mobile 400px */
+@media(max-width:400px) {
+    footer .left h2 {
+        font-size: 32px;
+    }
+
+    footer {
+        padding: 60px 16px;
+    }
 }
